@@ -1,0 +1,12 @@
+{
+  "name": "us-time-zone",
+  "version": "1.0.0",
+  "description": "- Simple app that displays what time it is on one screen for all the time zones in the United States.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
