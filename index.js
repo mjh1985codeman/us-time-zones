@@ -3,34 +3,34 @@ const estEl = document.getElementById('est');
 const cstEl = document.getElementById('cst');
 const mstEl = document.getElementById('mst');
 const pstEl = document.getElementById('pst');
+const timeZones = ['America/New_York', 'America/Chicago', 'America/Denver', 'America/Los_Angeles']
 
-const getLocalTime = () => {
-   let time = new Date();
-   let local = time.toLocaleString('en-US');
-   getEst();
-   writeThings(local)
+const getTimes = () => {
+    const time = new Date();
+    const timeObj = {
+        localTime: time.toLocaleString('en-US'),
+        estTime: time.toLocaleString('en-US', {
+            timeZone: timeZones[0]
+        }),
+        cstTime: time.toLocaleString('en-US', {
+            timeZone: timeZones[1]
+        }),
+        mstTime: time.toLocaleString('en-US', {
+            timeZone: timeZones[2]
+        }),
+        pstTime: time.toLocaleString('en-US', {
+            timeZone: timeZones[3]
+        })
+    }
+    writeThings(timeObj)
 };
 
-const getEst = () => {
-    let time = new Date();
-    const dateStr = time.toLocaleString('en-US', {
-        timeZone: 'America/New_York'
-      })
-      console.log(dateStr)
-      estEl.innerHTML = dateStr;
+const writeThings = obj => {
+   localEl.innerHTML = obj.localTime;
+   estEl.innerHTML = obj.estTime;
+   cstEl.innerHTML = obj.cstTime;
+   mstEl.innerHTML = obj.mstTime;
+   pstEl.innerHTML = obj.pstTime;
 };
 
-const writeThings = (t) => {
-   const currentTime = t;
-   console.log(currentTime);
-   localEl.innerHTML = currentTime;
-   
-};
-
-
-
-
-getLocalTime();
-
-
-
+getTimes();
