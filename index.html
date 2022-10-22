@@ -4,34 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
     <title>US-Time-Zones</title>
 </head>
 <body>
+    <div class="container is-fluid">
     <div class="header">
         <header>
-            <h1>US Time Zones</h1>
+            <h1 class="subtitle is-1">US Time Zones</h1>
         </header>
     </div>
-    <h2>Your Current Date and Time</h2>
-    <div class="local">
-        <p id="local"></p>
+    <div class="current-div">
+        <h2 class="subtitle is-4">Your Current Date and Time</h2>
+        <div class="local">
+            <p id="local" class="subtitle is-5 has-text-grey"></p>
+        </div>
     </div>
-    <h3>Eastern (EST):</h3>
-    <div class="est">
+    <div class="times level">
+        <div class="est level-item has-text-centered">
+        <h3 class="tz">Eastern (EST):</h3>
         <p id="est"></p>
-    </div>
-    <h3>Central (CST):</h3>
-    <div class="cst">
+        </div>
+   
+    <div class="cst level-item has-text-centered">
+        <h3>Central (CST):</h3>
         <p id="cst"></p>
     </div>
-    <h3>Mountain (MST):</h3>
-    <div class="mst">
+    
+    <div class="mst level-item has-text-centered">
+        <h3>Mountain (MST):</h3>
         <p id="mst"></p>
     </div>
-    <h3>Pacific (PST):</h3>
-    <div class="pst">
+    
+    <div class="pst level-item has-text-centered">
+        <h3>Pacific (PST):</h3>
         <p id="pst"></p>
     </div>
+</div>
+</div>
 </body>
 <script src="./index.js"></script>
 </html>

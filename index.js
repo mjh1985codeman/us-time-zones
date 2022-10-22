@@ -7,6 +7,7 @@ const timeZones = ['America/New_York', 'America/Chicago', 'America/Denver', 'Ame
 
 const getTimes = () => {
     const time = new Date();
+ 
     const timeObj = {
         localTime: time.toLocaleString('en-US'),
         estTime: time.toLocaleString('en-US', {
