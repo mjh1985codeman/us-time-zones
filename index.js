@@ -3,7 +3,7 @@ const estEl = document.getElementById('est');
 const cstEl = document.getElementById('cst');
 const mstEl = document.getElementById('mst');
 const pstEl = document.getElementById('pst');
-const timeZones = ['America/New_York', 'America/Chicago', 'America/Denver', 'America/Los_Angeles']
+const timeZones = ['America/New_York', 'America/Chicago', 'America/Denver', 'America/Los_Angeles'];
 
 const getTimes = () => {
     const time = new Date();
@@ -23,7 +23,7 @@ const getTimes = () => {
             timeZone: timeZones[3]
         })
     }
-    writeThings(timeObj)
+    writeThings(timeObj);
 };
 
 const writeThings = obj => {

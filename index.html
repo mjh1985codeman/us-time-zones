@@ -1,47 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
-    <title>US-Time-Zones</title>
+    <link rel="stylesheet" href="./index.css"/>
+    <title>us-time-zones</title>
 </head>
 <body>
-    <div class="container is-fluid">
-    <div class="header">
-        <header>
-            <h1 class="subtitle is-1">US Time Zones</h1>
-        </header>
-    </div>
+    <header class="header">
+        <h1>US Time Zones</h1>
+    </header>
     <div class="current-div">
-        <h2 class="subtitle is-4">Your Current Date and Time</h2>
+        <h2>Your Current Date and Time</h2>
         <div class="local">
-            <p id="local" class="subtitle is-5 has-text-grey"></p>
+            <p id="local"></p>
         </div>
     </div>
-    <div class="times level">
-        <div class="est level-item has-text-centered">
-        <h3 class="tz">Eastern (EST):</h3>
-        <p id="est"></p>
+    <div class="times">
+        <div class="time-slot">
+            <h3 class="tz">Eastern (EST):</h3>
+            <p class="tz-slot-dt" id="est"></p>
         </div>
-   
-    <div class="cst level-item has-text-centered">
-        <h3>Central (CST):</h3>
-        <p id="cst"></p>
+        <div class="time-slot">
+            <h3 class="tz">Central (CST):</h3>
+            <p class="tz-slot-dt" id="cst"></p>
+        </div>
+        <div class="time-slot">
+            <h3 class="tz">Mountain (MST):</h3>
+            <p class="tz-slot-dt" id="mst"></p>
+        </div>
+        <div class="time-slot">
+            <h3 class="tz">Pacific (PST):</h3>
+            <p class="tz-slot-dt" id="pst"></p>
+        </div>
     </div>
-    
-    <div class="mst level-item has-text-centered">
-        <h3>Mountain (MST):</h3>
-        <p id="mst"></p>
-    </div>
-    
-    <div class="pst level-item has-text-centered">
-        <h3>Pacific (PST):</h3>
-        <p id="pst"></p>
-    </div>
-</div>
-</div>
 </body>
 <script src="./index.js"></script>
 </html>
