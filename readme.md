@@ -11,6 +11,7 @@
 - CSS. 
 - That's it. . .No Really that is it.  
 
-## Deploy
-
+## Deployed
 Click [Here](https://mjh1985codeman.github.io/us-time-zones/) to see it. 
+
+![ScreenShot](assets/ustzss.png)
